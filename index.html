@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluga Jogos</title>
+    <link href="estilo.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="menu">
+        <a class="ativo" href="#">Início</a>
+    </div>
+    <div class="tetris">
+        <form name="formCliente">
+            <fieldset>
+                <legend>Cadastro de clientes</legend>
+                <div class="formatacao">
+                    <label class="supermario">Nome</label>
+                    <input class="sonic" type="text" size="40" id="nome" />
+
+                    <label class="supermario">CEP</label>
+                    <input class="sonic" type="text" size="10" id="cep" />
+                </div>
+                    <div class="formatacao">
+                        <label>Endereço</label>
+                        <input class="sonic" type="text" size="40" id="endereco" />
+
+                        <label class="supermario">Bairro</label>
+                        <input class="sonic" type="text" size="30" id="bairro" />
+
+                        <label class="supermario">Jogo Alugado</label>
+                        <input class="sonic" type="text" size="40" id="alugado"/>
+                    </div>
+                    <div class="formatacao">
+                        <label>Observações</label>
+                        <textarea class="sonic" type="text" id="observacoes"></textarea>
+                    </div>
+                    <div class="formatacao">
+                        <label></label>
+                        <button id="salvar">🕹️ Salvar</button>
+                        <button id="cancelar">👾 Cancelar</button>
+                    </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="listagem"></div>
+    <script src="cliente.js"></script>
+    
+</body>
+</html>
